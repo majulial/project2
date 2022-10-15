@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="./imagens/iconpro.ico">
+    <link rel="stylesheet" href="./css/estilo.css">
+
+    <title>PROJECT 2</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+        <h1>TRIX CODE</h1>
+        </nav>
+    </header>
+
+
+    <main>
+    
+
+        <div class="container-box"> 
+
+            <div class="conteudo">
+
+                <div class="tipdcod" class="cod">
+
+                    <h2>Selecione uma linguagem</h2>
+
+                    <select name="escolha" id="cod-escolhido">
+                        <option value="select" id="opc-selecione" disabled selected>Selecione</option> 
+                           <!--disabled selected: essa opção serve para que o "selecione" n seja uma opção-->
+                        <option value="cifraCesar" id="opção-cifrac">Cifra de César</option>
+                        <option value="base.64" id="opção-base">Base64</option>
+                    </select>
+
+                </div>
+
+                      <!--Div escondida que aparece quando a op cifra for selecionada-->
+                <div id="divCifra">
+                    <h3>Escolha um passo:</h3>
+                        <label id="lab-passo" class="lab-msg">Passo: </label>
+                        <input id="passo" type= "number" class="passo" min=1 max=26  placeholder="1-25">
+                
+                </div>
+                
+                <section class="texto-cifra"> 
+                    <label id="label-principal" class="label-msg">Mensagem: </label>
+                    <input id="msg-c" class="msg" placeholder="insira seu texto">
+                </section>
+                <!--Final div escondida-->
+
+
+                    <section class="bttn">
+
+               <!--Botão radios (são as opções de seleção) (input é a bolinha) (label é o "decodificar" do lado)-->
+                <div class="radio-button">
+                      <input type="radio" name="radioInput" class ="radio-input" id="codificar" value="codificar">
+                      <label class="bebel" for="codificar">Codificar</label>
+                </div>
+        
+                <div class="radio-button2">
+                      <input type="radio" name ="radioInput" class ="radio-input" id="decodificar" value="decodificar">
+                      <label class="bebel" for="decodificar">Decodificar</label> 
+                </div>
+              <!---->
+        
+
+                <!-- OBS: com o 'for' no label, faz com que o input e o label sejam selecionados automaticamente, clicando em qualquer um dos dois. (por causa do mesmo nome que foi definido para o ID DO INPUT e o FOR DA LABEL)-->
+           
+                <div class="btn">
+                    <button type="submit" class="confirmar" id="btn-codificar">Confirmar</button>
+                </div>
+            </section>
+
+                <section class="texto-cifra"> 
+                    <label id="last-label" class="lab-msg">Resultado: </label>
+                    <input id="msg-result" class="msg" placeholder="...">
+                </section>
+                
+
+            </div>
+
+        </div>
+        
+
+    </main>
+
+    <footer>
+<h4>Criado por Júlia de Lima - <a href="https://www.resilia.com.br/" target="_blank">Resilia Educação</a></h4>
+    </footer>
+ 
+
+
+    <script src="./javascript/jajs.js"></script>
+</body>
+</html>
